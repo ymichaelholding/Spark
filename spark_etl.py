@@ -176,10 +176,10 @@ targetdf.show()
 
 targetdf.write \
    .format("jdbc") \
-   .option("url", "jdbc:oracle:thin:@DESKTOP-VVUKHPU:49674:xe") \
+   .option("url", "jdbc:oracle:thin:@****:49674:xe") \
    .option("driver", "oracle.jdbc.driver.OracleDriver") \
    .option("dbtable", target_table) \
    .option("user", "hr") \
-   .option("password", "Spark123$") \
+   .option("password", "*****") \
    .mode('append').save()
 
