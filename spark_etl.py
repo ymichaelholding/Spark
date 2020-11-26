@@ -127,7 +127,7 @@ join_dtls_dict = json_job_def['JoinCondition']
 for keys,values in join_dtls_dict.items():
       for key,value in values.items():
           i=i+1
-          if key == 'PrimaryEntity':
+          if key == 'PMEntity':
                 tbl_alias_seq=tbl_alias_seq+1
                 from_clause='FROM ' + value + '_' + str(sequence) +' t'+ str(tbl_alias_seq)
                 i=0
